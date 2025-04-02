@@ -1,0 +1,241 @@
+html, body{
+  margin: 0;
+  background-color: #2F4F30;
+  color: white;
+}
+
+.titulo{
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.carta{
+  width: 150px;
+  position: relative;
+  left: 100px;
+  margin-left: -75px;
+}
+
+#computadora-cartas, #jugador-cartas{
+  height: 240px;
+}
+
+
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-contenido {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-contenido ul li{
+  text-align: start;
+}
+
+.modal-contenido h2 {
+  margin-bottom: 15px;
+}
+
+.modal-contenido input {
+  width: 80%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.modal-contenido button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal-contenido button:hover {
+  background: #218838;
+}
+
+#modalResultado{
+  display: none;
+}
+
+#btnCerrarResultado {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#btnCerrarResultado:hover {
+  background-color: #0056b3;
+}
+
+/* 🔥📱 Ajustes SOLO para móviles (pantallas menores a 768px) */
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 24px; /* Reducir título en móviles */
+    padding: 10px;
+  }
+
+  .carta {
+    width: 100px; /* Reducir tamaño de cartas */
+    left: 30px;
+    margin-left: -25px;
+  }
+
+  #computadora-cartas, #jugador-cartas {
+    height: auto; /* Ajustar altura automática */
+    flex-wrap: wrap; /* Para que las cartas no se salgan de la pantalla */
+    justify-content: center;
+  }
+
+  button {
+    font-size: 14px; /* Botones más pequeños */
+    margin-top: 8px;
+    padding: 8px 12px;
+  }
+
+  .modal-contenido {
+    width: 80%; /* Hacer los modales más pequeños en móviles */
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+
+}
+
+/* 🔥 Ajustes EXTRA para pantallas muy pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+  .titulo {
+    font-size: 20px;
+  }
+
+  .carta {
+    width: 80px; /* Cartas más pequeñas */
+  }
+
+  button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+
+
+
+/*html, body{
+  margin: 0;
+  background-color: #2F4F30;
+  color: white;
+}
+
+.titulo{
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.carta{
+  width: 150px;
+  position: relative;
+  left: 100px;
+  margin-left: -75px;
+}
+
+#computadora-cartas, #jugador-cartas{
+  height: 240px;
+}
+
+
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-contenido {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-contenido h2 {
+  margin-bottom: 15px;
+}
+
+.modal-contenido input {
+  width: 80%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.modal-contenido button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal-contenido button:hover {
+  background: #218838;
+}
+
+#modalResultado{
+  display: none;
+}
+
+#btnCerrarResultado {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#btnCerrarResultado:hover {
+  background-color: #0056b3;
+}
+*/

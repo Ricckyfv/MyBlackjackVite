@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/MyBlackjackVite/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>My Blackjack</title>
+    <script type="module" crossorigin src="/MyBlackjackVite/assets/index-bYaE6aVr.js"></script>
+    <link rel="stylesheet" crossorigin href="/MyBlackjackVite/assets/index-BbXLKOqP.css">
+  </head>
+  <body>
+    <header class="titulo">Blackjack - RiickyFV</header>
+
+    <div id="modalNombre" class="modal">
+      <div class="modal-contenido">
+        <h2>Bienvenido al Blackjack</h2>
+        <label for="nombre">Ingresa tu nombre:</label>
+        <input type="text" id="nombre" placeholder="Tu nombre aquí" />
+        <button id="btnGuardarNombre">Aceptar</button>
+      </div>
+    </div>
+
+    <!-- Modal de reglas del juego -->
+    <div id="modalReglas" class="modal">
+      <div class="modal-contenido">
+        <h2>Hola, <span id="userNamePlaceholder"></span>!</h2>
+        <p>Reglas del Blackjack:</p>
+        <ul>
+          <li>El objetivo es sumar 21 puntos o acercarse sin pasarse.</li>
+          <li>Las cartas numéricas valen su número.</li>
+          <li>J, Q y K valen 10 puntos.</li>
+          <li>El As vale 11</li>
+          <li>Puedes pedir cartas o plantarte.</li>
+          <li>Si te pasas de 21, pierdes automáticamente.</li>
+        </ul>
+        <button id="btnCerrarReglas">¡Entendido!</button>
+      </div>
+    </div>
+
+    <!-- Modal de resultado -->
+    <div id="modalResultado" class="modal">
+      <div class="modal-contenido">
+        <h2 id="resultadoTitulo"></h2>
+        <p id="resultadoMensaje"></p>
+        <button id="btnCerrarResultado">Aceptar</button>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row mt-2">
+        <div class="col text-center">
+          <button id="btnNuevo" class="btn btn-danger">Nuevo juego</button>
+          <button id="btnPedir" disabled="disabled" class="btn btn-primary">Pedir carta</button>
+          <button id="btnDetener" disabled="disabled" class="btn btn-primary">Detener</button>
+          <button id="btnVerReglas" class="btn btn-info">Ver reglas</button>
+        </div>
+      </div>
+    
+      <div class="row mt-3">
+        <div class="col">
+          <h2><span id="nombreJugador">Jugador</span> - <small>0</small></h2>
+          <div id="jugador-cartas" class="divCartas"></div>
+        </div>
+      </div>
+    
+      <div class="row mt-3">
+        <div class="col">
+          <h2>IA - <small>0</small></h2>
+          <div id="computadora-cartas" class="divCartas"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="row mt-2">
+      <div class="col text-center">
+        <button id="btnNuevo" class="btn btn-danger">Nuevo juego</button>
+        <button id="btnPedir" disabled="disabled" class="btn btn-primary">
+          Pedir carta
+        </button>
+        <button id="btnDetener" disabled="disabled" class="btn btn-primary">
+          Detener
+        </button>
+        <button id="btnVerReglas" class="btn btn-info">Ver reglas</button>
+      </div>
+    </div>
+
+    <div class="row container">
+      <div class="col">
+        <h1><span id="nombreJugador">Jugador</span> - <small>0</small></h1>
+        <div id="jugador-cartas" class="divCartas">
+        </div>
+      </div>
+    </div>
+
+    <div class="row container mt-2">
+      <div class="col">
+        <h1>Computadora - <small>0</small></h1>
+        <div id="computadora-cartas" class="divCartas">
+        </div>
+      </div>
+    </div> -->
+
+    <div id="app"></div>
+  </body>
+</html>
